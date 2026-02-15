@@ -260,7 +260,20 @@ export default function TransactionsPage() {
       </div>
 
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card className={`${saldo >= 0 ? 'bg-primary/10 border-primary/20' : 'bg-destructive/10 border-destructive/20'}`}>
+          <CardContent className="flex items-center justify-between p-6">
+            <div>
+              <p className="text-sm text-muted-foreground">Saldo Disponível</p>
+              <p className={`text-2xl font-bold font-mono ${saldo >= 0 ? 'text-primary' : 'text-destructive'}`}>
+                {formatCurrency(saldo)}
+              </p>
+            </div>
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center ${saldo >= 0 ? 'bg-primary/20' : 'bg-destructive/20'}`}>
+              {saldo >= 0 ? <TrendingUp className="w-5 h-5 text-primary" /> : <TrendingDown className="w-5 h-5 text-destructive" />}
+            </div>
+          </CardContent>
+        </Card>
         <Card className="bg-emerald-500/10 border-emerald-500/20">
           <CardContent className="flex items-center justify-between p-6">
             <div>
