@@ -42,6 +42,7 @@ const NavItem = ({ item, onClick }) => {
 export const Layout = ({ children }) => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleLogout = () => {
@@ -128,7 +129,6 @@ export const Layout = ({ children }) => {
         <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-lg border-t border-border z-50">
           <div className="flex items-center justify-around py-2">
             {navItems.map((item) => {
-              const location = useLocation();
               const isActive = location.pathname === item.path;
               return (
                 <NavLink
