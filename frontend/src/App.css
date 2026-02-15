@@ -1,34 +1,71 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Finance App Styles */
+
+/* Prevent text-align center inheritance */
+.App {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-link {
-    color: #61dafb;
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Number input without spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Chart tooltip custom styles */
+.recharts-tooltip-wrapper {
+  z-index: 100;
+}
+
+/* Progress bar custom styles */
+.progress-bar-income {
+  background: linear-gradient(90deg, #22C55E 0%, #10B981 100%);
+}
+
+.progress-bar-expense {
+  background: linear-gradient(90deg, #EF4444 0%, #DC2626 100%);
+}
+
+/* Card hover effects */
+.card-interactive {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+}
+
+/* Mobile bottom nav safe area */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .mobile-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Page container with mobile nav offset */
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 5rem;
+  }
 }
