@@ -1,0 +1,2 @@
+# FinanceAI
+aplicativo financeiro 
