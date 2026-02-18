@@ -1,8 +1,8 @@
 # 💰 FinanceiroIA – Assistente Inteligente de Gestão Financeira
 
-O **FinanceiroIA** é uma aplicação inteligente voltada para organização e controle financeiro pessoal, desenvolvida com foco em usabilidade, organização de dados e visualização estratégica de informações.
+Aplicação desenvolvida para controle e organização financeira pessoal, com foco em usabilidade, visualização de dados e lógica inteligente de categorização.
 
-Este projeto foi criado para demonstrar boas práticas de desenvolvimento, estrutura modular e aplicação de lógica automatizada para análise financeira.
+O **FinanceiroIA** foi criado como projeto técnico para demonstrar organização de código, estrutura de aplicação moderna e boas práticas de desenvolvimento.
 
 ---
 
@@ -11,13 +11,13 @@ Este projeto foi criado para demonstrar boas práticas de desenvolvimento, estru
 O FinanceiroIA permite que o usuário:
 
 - 📊 Registrar receitas e despesas
-- 🏷️ Organizar gastos por categorias
-- 📈 Visualizar relatórios financeiros
-- 📅 Acompanhar histórico mensal
-- 🤖 Aplicar lógica inteligente para análise de padrões financeiros
-- 💡 Obter insights sobre comportamento de consumo
+- 🏷️ Organizar movimentações por categorias
+- 📈 Visualizar saldo atualizado
+- 📅 Acompanhar histórico financeiro
+- 📊 Analisar dados através de gráficos
+- 🤖 Utilizar lógica inteligente para organização automática
 
-A aplicação foi projetada para ser simples, intuitiva e eficiente.
+O sistema foi pensado para oferecer uma experiência simples, intuitiva e eficiente.
 
 ---
 
@@ -25,43 +25,41 @@ A aplicação foi projetada para ser simples, intuitiva e eficiente.
 
 - Flutter
 - Dart
-- Gerenciamento de Estado
-- Armazenamento Local (SQLite / Local Storage)
-- Gráficos dinâmicos
-- Estrutura modular organizada
+- Gerenciamento de estado
+- Estrutura modular
+- Armazenamento local
+- Componentes reutilizáveis
 
 ---
 
-## 📱 Funcionalidades Principais
+## 📱 Funcionalidades
 
 - Tela inicial com resumo financeiro
 - Cadastro de receitas
 - Cadastro de despesas
-- Sistema de categorias
+- Categorias personalizadas
 - Dashboard com gráficos
-- Histórico de movimentações
-- Cálculo automático de saldo
+- Histórico de transações
+- Atualização automática do saldo
 
 ---
 
-## 🧠 Diferenciais do Projeto
+## 🌐 Ambiente de Hospedagem
 
-- Interface moderna e responsiva
-- Organização clara de dados financeiros
-- Lógica automatizada para categorização
-- Estrutura preparada para futura integração com APIs de Inteligência Artificial
-- Código estruturado para escalabilidade
+O projeto está hospedado na plataforma:
+
+**Emergent**
+
+Utilizado como ambiente para demonstração e testes da aplicação.
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Objetivo do Projeto
 
-Este projeto foi desenvolvido com o objetivo de:
-
-- Facilitar o controle financeiro pessoal
-- Aplicar boas práticas de desenvolvimento mobile
-- Criar um modelo funcional para expansão futura com IA real
-- Servir como projeto técnico para portfólio profissional
+- Demonstrar aplicação prática de controle financeiro
+- Aplicar boas práticas de organização e arquitetura
+- Simular um sistema real de gestão financeira
+- Servir como projeto técnico para portfólio
 
 ---
 
@@ -74,4 +72,4 @@ Desenvolvedor Pleno Nível II
 
 ## 📄 Licença apache 2.0
 
-Projeto desenvolvido para fins educacionais, demonstração técnica e portfólio.
+Projeto desenvolvido para fins de demonstração técnica e portfólio profissional.
